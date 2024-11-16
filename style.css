@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3a3b3c; /* Dark blue background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    text-align: center; /* Center text in the container */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px; /* Add some space below the heading */
+    font-size: 24px; /* Increased font size for title */
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border color and shadow */
+}
+
+input[type="text"]:focus {
+    border-color: #5cb85c; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5); /* Add shadow on focus */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Add transform transition */
+    font-weight: bold; /* Make button text bold */
+}
+
+button:hover {
+    background-color: #4cae4c;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; /* Add space above the task list */
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+li:hover {
+    background-color: #f9f9f9; /* Light gray background on hover */
+}
+
+li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+li.completed {
+    text-decoration: line-through; /* Strikethrough for completed tasks */
+    color: #aaa; /* Gray color for completed tasks */
+}
+
+.timer-display {
+    font-weight: bold; /* Make the timer text bold */
+    color: #5cb85c; /* Color for the timer */
+    margin-left: 10px; /* Space between task text and timer */
+    font-size: 14px; /* Font size for the timer */
+}
